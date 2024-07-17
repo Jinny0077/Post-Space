@@ -2,6 +2,22 @@ import React from "react";
 import { Autocomplete, TextField, Chip, Box } from "@mui/material";
 
 const TagsInput = ({ value, onChange, error, helperText }) => {
+  const options = [
+    "history",
+    "american",
+    "crime",
+    "science",
+    "fiction",
+    "fantasy",
+    "space",
+    "adventure",
+    "nature",
+    "environment",
+    "philosophy",
+    "psychology",
+    "health",
+  ];
+
   return (
     <Box
       sx={{
@@ -21,8 +37,8 @@ const TagsInput = ({ value, onChange, error, helperText }) => {
     >
       <Autocomplete
         multiple
-        freeSolo
-        options={[]}
+        freeSolo={false}
+        options={options}
         value={value || []}
         onChange={(event, newValue) => {
           onChange(newValue);
@@ -30,6 +46,7 @@ const TagsInput = ({ value, onChange, error, helperText }) => {
         renderTags={(value, getTagProps) =>
           value.map((option, index) => (
             <Chip
+              key={option}
               variant="outlined"
               label={option}
               {...getTagProps({ index })}

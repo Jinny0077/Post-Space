@@ -13,10 +13,7 @@ const createPostSchema = yup.object().shape({
   tag: yup
     .array()
     .of(yup.string().required("Tag is required"))
-    .min(1, "At least one tag is required")
-    .transform((value, originalValue) => {
-      return originalValue === "" || originalValue === undefined ? null : value;
-    }),
+    .min(1, "At least one tag is required"),
 });
 
 export default function useHomePageService() {

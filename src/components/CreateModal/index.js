@@ -26,9 +26,9 @@ export default function CreateModal({
     <Dialog
       open={isModalVisible}
       onClose={handleClose}
-      maxWidth="md"
+      maxWidth="xl"
       PaperProps={{
-        sx: { borderRadius: "20px", width: "40%" },
+        sx: { borderRadius: "20px", width: "50%" },
       }}
     >
       <Box
@@ -106,7 +106,7 @@ export default function CreateModal({
               justifyContent: "center",
             }}
           >
-            <Box display={"flex"} width="50%" justifyContent="space-between">
+            <Box display={"flex"} width="100%" justifyContent="space-between">
               <CustomButton
                 color="cancel"
                 label="Cancel"
