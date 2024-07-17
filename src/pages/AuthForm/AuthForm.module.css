@@ -1,0 +1,18 @@
+.authFormInnerContainer {
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 50px 30px;
+}
+
+.actions a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #f8b959;
+}
+
+.actions a:hover {
+  text-decoration: none;
+  color: #f8b959;
+  opacity: 0.8;
+}

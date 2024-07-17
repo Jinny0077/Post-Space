@@ -1,0 +1,14 @@
+.authFormInnerContainer {
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 50px 30px;
+}
+
+.inputContainer {
+  width: 100%;
+}
+
+.inputContainer.content {
+  width: calc(100% - 40px);
+}

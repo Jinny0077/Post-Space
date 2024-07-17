@@ -1,0 +1,10 @@
+.customSelect {
+  border-radius: 50px !important;
+  border-color: #f8b959 !important;
+  border-width: 2px !important;
+}
+
+.customSelect .MuiInputBase-input {
+  padding: 8px 16px !important;
+  color: inherit !important;
+}
